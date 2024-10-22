@@ -1,2 +1,4 @@
+*Face_Archetype_Skeleton_sequence.uasset filter=lfs diff=lfs merge=lfs -text
+*Ada_FaceMesh.uasset filter=lfs diff=lfs merge=lfs -text
 *Face_Archetype.uasset filter=lfs diff=lfs merge=lfs -text
-*Hana_FaceMesh.uasset filter=lfs diff=lfs merge=lfs -text
+*Taro_FaceMesh.uasset filter=lfs diff=lfs merge=lfs -text
