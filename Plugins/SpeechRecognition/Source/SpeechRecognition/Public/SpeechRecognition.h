@@ -74,20 +74,18 @@ struct FRecognitionPhrase
 
 	// default constructor
 	FRecognitionPhrase() {
-		phrase = FString();
-		tolerance = EPhraseRecognitionTolerance::VE_1;
 	}
 
 	// if you wish to only provide a phrase
-	FRecognitionPhrase(const FString& keyword) {
-		phrase = FString();
+	FRecognitionPhrase(FString keyword) {
+		this->phrase = phrase;
 		tolerance = EPhraseRecognitionTolerance::VE_5;
 	}
 
 	// if you wish to specify both a phrase, and a tolerance setting
-	FRecognitionPhrase(const FString& InPhrase, EPhraseRecognitionTolerance InTolerance) {
-		phrase = InPhrase;
-		tolerance = InTolerance;
+	FRecognitionPhrase(FString phrase, EPhraseRecognitionTolerance tolerance) {
+		this->phrase = phrase;
+		this->tolerance = tolerance;
 	}
 };
 
@@ -101,6 +99,6 @@ public:
 	virtual void ShutdownModule() override;
 
 	/** Search for a dll to be loaded dynamically */
-	bool SearchForDllPath(const FString& _searchBase, FString _dllName);
+	bool SearchForDllPath(FString _searchBase, FString _dllName);
 
 };

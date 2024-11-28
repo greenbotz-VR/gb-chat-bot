@@ -10,18 +10,14 @@
 	"DocsURL": "",
 	"MarketplaceURL": "",
 	"SupportURL": "",
-	"EngineVersion": "5.4.0",
+	"EngineVersion": "5.3.0",
 	"CanContainContent": false,
 	"Installed": true,
 	"Modules": [
 		{
 			"Name": "SpeechRecognition",
 			"Type": "Runtime",
-			"LoadingPhase": "PreDefault",
-			"PlatformAllowList": [
-				"Win64",
-				"Mac"
-			]
+			"LoadingPhase": "PreDefault"
 		}
 	]
 }
